@@ -23,10 +23,10 @@ public class Carta {
     }
 }
 enum Naipe {
-    OUROS (0), 
-    ESPADAS (1), 
-    COPAS (2), 
-    PAUS (3);
+    OUROS    (0), 
+    ESPADAS  (1), 
+    COPAS    (2), 
+    PAUS     (3);
 
     private int rank;
 
@@ -40,16 +40,16 @@ enum Naipe {
 }
 
 enum Valor {
-    QUATRO (0), 
-    CINCO (1), 
-    SEIS (2), 
-    SETE (3), 
-    DAMA (4), 
-    VALETE (5), 
-    REI (6), 
-    AS (7), 
-    DOIS (8), 
-    TRES (9); 
+    QUATRO  (0), 
+    CINCO   (1), 
+    SEIS    (2), 
+    SETE    (3), 
+    DAMA    (4), 
+    VALETE  (5), 
+    REI     (6), 
+    AS      (7), 
+    DOIS    (8), 
+    TRES    (9); 
 
     private int rank;
 

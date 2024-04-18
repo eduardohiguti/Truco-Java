@@ -1,12 +1,12 @@
 package entities;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class Jogador {
     private int pontuacao;
-    private ArrayList<Carta> mao;
+    private List<Carta> mao;
 
-    public Jogador(ArrayList<Carta> mao) {
+    public Jogador(List<Carta> mao) {
         this.mao = mao;
         this.pontuacao = 0;
     }
@@ -21,11 +21,11 @@ public class Jogador {
 
 
     //Getters e Setters
-    public ArrayList<Carta> getMao() {
+    public List<Carta> getMao() {
         return this.mao;
     }
 
-    public void setMao(ArrayList<Carta> mao) {
+    public void setMao(List<Carta> mao) {
         this.mao = mao;
     }
 

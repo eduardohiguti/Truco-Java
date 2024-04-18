@@ -30,6 +30,5 @@ public class Baralho {
             maoJogador1.add(baralho.get(i));
             maoJogador2.add(baralho.get(i + meio));
         }
-
     }
 }
