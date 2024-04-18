@@ -1,18 +1,28 @@
 package application;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import entities.*;
 
 public class Program {
     public static void main(String[] args) {
-    Baralho baralho = new Baralho();
+        Baralho baralho = new Baralho();
 
-    System.out.println("Imprimindo todas as cartas disponiveis");
-    baralho.terminal();
-    System.out.println("====================================");
-    System.out.println("Embaralhando cartas");
-    baralho.embaralhar();
-    System.out.println("====================================");
-    System.out.println("Cartas embaralhadas");
-    baralho.terminal();
+        List<Carta> maoJogador1 = new ArrayList<>();
+        List<Carta> maoJogador2 = new ArrayList<>();
+
+        baralho.distribuir(maoJogador1, maoJogador2);
+
+        System.out.println("Mão do Jogador 1:");
+        for (Carta carta : maoJogador1) {
+            System.out.println(carta);
+        }
+
+        System.out.println();
+        System.out.println("Mão do Jogador 2:");
+        for (Carta carta : maoJogador2) {
+            System.out.println(carta);
+        }
     }
 }
