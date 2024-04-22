@@ -6,23 +6,21 @@ public class Jogador {
     private int pontuacao;
     private List<Carta> mao;
 
-    public Jogador(List<Carta> mao) {
+    public Jogador(int pontuacao, List<Carta> mao) {
         this.mao = mao;
         this.pontuacao = 0;
     }
 
-    public void receberCarta(Carta carta) {
-        mao.add(carta);
+    public void incrementarPontuacao() {
+        pontuacao = pontuacao + 1;
     }
 
-    public Carta jogaCarta(int n) {
-        return this.mao.remove(n);
+    public void removerCarta(int escolha) {
+        mao.remove(escolha);
     }
 
-
-    //Getters e Setters
     public List<Carta> getMao() {
-        return this.mao;
+        return mao;
     }
 
     public void setMao(List<Carta> mao) {
