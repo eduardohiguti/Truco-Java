@@ -20,7 +20,7 @@ public class Baralho {
             }
         }
         embaralhar();
-        definirManinha();
+        definirManilha();
         embaralhar();
     }
 
@@ -28,18 +28,19 @@ public class Baralho {
         Collections.shuffle(baralho);
     }
 
-    private void definirManinha() {
-        manilha = baralho.get(0);
-        System.out.println("A manilha é: " + manilha);
+    private void definirManilha() {
+        manilha = baralho.get(1);
     }
 
-    public void distribuir(List<Carta> maoJogador1, List<Carta> maoJogador2) {
+    public void distribuir(List<Carta> maoJogador1, List<Carta> maoJogador2, List<Carta> maoJogador3, List<Carta> maoJogador4) {
         final int tamanhoMao = 3;
-        final int meio = baralho.size() / 2;
+        final int quarto = baralho.size() / 4;
 
         for (int i=0; i<tamanhoMao; i++) {
             maoJogador1.add(baralho.get(i));
-            maoJogador2.add(baralho.get(i + meio));
+            maoJogador2.add(baralho.get(i + quarto));
+            maoJogador3.add(baralho.get(i + quarto * 2));
+            maoJogador4.add(baralho.get(i + quarto * 3));
         }
     }
 
